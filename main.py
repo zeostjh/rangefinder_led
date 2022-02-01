@@ -25,7 +25,7 @@ while True:
     ultrasonic = hcsr04.HCSR04(trigger_pin=12, echo_pin=13)
     distance = ultrasonic.distance_cm()
     payload = distance
-    print('Distance:', distance/0.1, 'MM', '|', distance, 'CM', '|', distance/2.54, 'INCH', '|', distance/30.48, 'FEET', '|', distance/100, 'METER')
+    print('Distance:', distance/0.1, 'MM', '|', distance, 'CM')
     if distance < 1:  #unzero timeout
         A_r.on()
         A_g.on()

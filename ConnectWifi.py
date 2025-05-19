@@ -1,8 +1,8 @@
 def connect():
     import network
  
-    ssid = "Llama Speed"
-    password =  "9542942625"
+    ssid = "########"
+    password =  "#########"
  
     station = network.WLAN(network.STA_IF)
     if station.isconnected() == True:
